@@ -9,17 +9,3 @@ python3
 
 ### Usage
 `python3 clickjack.py <url>`
-
-### Output
-Creates two html pages: 
-* cj-target.html - the page that will be automatically opened in your browser
-* cj-attacker.html - a page that generates our sample attacking iframe 
-
-### When the page is vulnerable:
-
-![VULNERABLE](clickjacked.png)
-
-
-### When the page is not vulnerable (may also appear blank):
-
-![NOT_VULNERABLE](not_clickjacked.png)
