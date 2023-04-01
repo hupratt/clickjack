@@ -1,4 +1,4 @@
-# clickjack
+# Clickjack
 Simple script to test if a page is vulnerable to clickjacking
 
 ### Description
