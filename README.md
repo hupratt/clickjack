@@ -8,4 +8,7 @@ Attempts to render the target site in an iframe and places another iframe on top
 python3
 
 ### Usage
-`python3 clickjack.py <url>`
+`virtualenv env`
+`source env/bin/activate`
+`python clickjack.py <url>`
+`flask --app serve.app run`

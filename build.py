@@ -1,6 +1,5 @@
 import os
 import sys
-import webbrowser
 
 if len(sys.argv) != 2:
 	print('\n[+] Description: %s can quickly verify if a web page is vulnerable to clickjacking' % __file__)
@@ -24,12 +23,10 @@ html = '''
 ''' % (url, url, url)
 
 
-cjt = os.path.abspath('cj-target.html')
-localurl = 'file://' + cjt
+outputPath = os.path.abspath('./serve/templates/index.html')
+localurl = 'file://' + outputPath
 
-with open(cjt, 'w') as t:
+with open(outputPath, 'w') as t:
 	t.write(html)
 
-webbrowser.open(localurl)
-
-print('\n[+] Test Complete!')
+print('\n[+] Build process complete!')
